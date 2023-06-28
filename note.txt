@@ -1,2 +1,0 @@
-Why Node and Express are not support in TypeScript?
--> Because the JavaScript packages that do not have a native typescript support usually have type definitions available on them. These definitions can be searched as types packages, and these are npm packages which provide type definitions for specific packages
