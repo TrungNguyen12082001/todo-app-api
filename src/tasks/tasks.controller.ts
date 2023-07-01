@@ -8,6 +8,7 @@ export class TasksController {
     ),
   ) {}
 
+  //@ts-ignore
   public async getAll(): Promise<Task[]> {
     // Declare a variable to hold all tasks
     let allTasks: Task[];
@@ -19,6 +20,7 @@ export class TasksController {
           date: 'ASC',
         },
       });
+      console.log(allTasks);
     } catch (errors) {
       console.log(errors);
     }
