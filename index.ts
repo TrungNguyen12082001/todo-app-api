@@ -12,7 +12,7 @@ const app: Express = express();
 dotenv.config();
 
 // Parse request Body
-app.use(bodyParser.json()); // Out request body would be attached to out incoming request as a body property and body parser will also process the incoming JSON and convert it to a JavaScript object. So we would be able to use request body as a JavaScript object
+app.use(bodyParser.json()); // Our request body would be attached to out incoming request as a body property and body parser will also process the incoming JSON and convert it to a JavaScript object. So we would be able to use request body as a JavaScript object
 
 // Use CORS install types as well
 app.use(cors()); // 17 + 20 -> able to streamline the incoming request
