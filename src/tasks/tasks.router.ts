@@ -18,7 +18,7 @@ tasksRouter.post(
   taskController.create,
 );
 
-tasksRouter.post(
+tasksRouter.put(
   '/tasks',
   updateValidator,
   taskController.update,
