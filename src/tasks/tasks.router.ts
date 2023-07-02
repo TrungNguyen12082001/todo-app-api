@@ -1,7 +1,10 @@
 import { Router } from 'express';
 
 import { taskController } from './tasks.controller';
-import { createValidator } from './tasks.validator';
+import {
+  createValidator,
+  updateValidator,
+} from './tasks.validator';
 
 /** Fire the router function */
 export const tasksRouter: Router = Router();
@@ -13,4 +16,10 @@ tasksRouter.post(
   '/tasks',
   createValidator,
   taskController.create,
+);
+
+tasksRouter.post(
+  '/tasks',
+  updateValidator,
+  taskController.update,
 );
