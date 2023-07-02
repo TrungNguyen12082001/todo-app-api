@@ -2,3 +2,15 @@
 
 GET http://localhost:3200/tasks
 Content-Type: application/json
+
+### Create a new task
+POST http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+    "title": "Testing",
+    "date": "2022-01-01T12:00:00Z",
+    "description": "lorem testing in 2022",
+    "priority": "normal",
+    "status": "todo"
+}

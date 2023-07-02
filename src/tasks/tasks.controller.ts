@@ -1,6 +1,6 @@
 import { Task } from './tasks.entity';
 import { AppDataSource } from '../../index';
-import { instanceToInstance } from 'class-transformer';
+import { instanceToInstance } from 'class-transformer'; // used to transform an instance object to plain object
 
 export class TasksController {
   constructor(
