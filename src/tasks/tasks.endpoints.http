@@ -14,3 +14,12 @@ Content-Type: application/json
     "priority": "normal",
     "status": "todo"
 }
+
+### Update A Task
+PUT http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+    "id": "90ccb743-8e44-4f8e-8785-21d6d1f667ea",
+    "status": "inProgress"
+}
