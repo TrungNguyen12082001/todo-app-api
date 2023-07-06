@@ -20,7 +20,7 @@ app.use(cors()); // 17 + 20 -> able to streamline the incoming request
 // Create Database Connection
 export const AppDataSource = new DataSource({
   type: 'mysql',
-  host: 'localhost',
+  host: process.env.DB_HOST,
   port: 3306,
   username: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
